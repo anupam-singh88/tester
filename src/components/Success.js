@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Success = () => {
     useEffect(() => {
@@ -13,6 +14,7 @@ const Success = () => {
     return (
         <div>
             <p>This is a success page</p>
+            <Link to='/'>Home</Link>
         </div>
     )
 }
