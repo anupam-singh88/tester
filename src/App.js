@@ -17,8 +17,9 @@ const App = () => {
       {/* <div> */}
       <Route path="/" element={<>
         <h1>Home page</h1>
-        <Link to="/success">Success</Link>
-        <Link to="/new">New</Link>
+        <Link to="/success">Success Page</Link>
+        <br />
+        <Link to="/new">New Dummy Page</Link>
 
       </>} />
       <Route path="/success" element={<Success />} />
