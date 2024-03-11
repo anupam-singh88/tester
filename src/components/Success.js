@@ -13,10 +13,11 @@ const Success = () => {
     // }, [])
     const conversion = () => {
         console.log(window.trackdesk)
+        alert('Conversion btn Triggered')
         window.trackdesk("lennyai", "conversion", {
             "conversionType": "freetrial",
             "amount": {
-                "value": "$10"
+                "value": 10
             }
         });
     }
