@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import Success from './components/Success'
 import New from './components/New'
+import Ip from './components/IpDetector'
 
 const App = () => {
   useEffect(() => {
@@ -10,7 +11,6 @@ const App = () => {
       console.log('initiating trackdesk...')
       window.trackdesk("lennyai", "click");
     }
-
   }, [])
   return (
     <Routes>
@@ -24,6 +24,7 @@ const App = () => {
       </>} />
       <Route path="/success" element={<Success />} />
       <Route path="/new" element={<New />} />
+      <Route path="/ip" element={<Ip />} />
       <Route path="/*" element={<h1>404 page</h1>} />
 
       {/* </div > */}

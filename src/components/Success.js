@@ -17,7 +17,7 @@ const Success = () => {
         window.trackdesk("lennyai", "conversion", {
             "conversionType": "freetrial",
             "amount": {
-                "value": 10
+                "value": "10"
             }
         });
     }
