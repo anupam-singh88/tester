@@ -11,6 +11,17 @@ const App = () => {
       console.log('initiating trackdesk...')
       window.trackdesk("lennyai", "click");
     }
+
+
+    let url = new URL(window.location.href);
+
+    let params = new URLSearchParams(url.search);
+
+    let linkId = params.get("linkId");
+    let sourceId = params.get("sourceId");
+
+    console.log(`Link ID: ${linkId}`);
+    console.log(`Source ID: ${sourceId}`);
   }, [])
   return (
     <Routes>
