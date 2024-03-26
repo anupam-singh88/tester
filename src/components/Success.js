@@ -18,6 +18,9 @@ const Success = () => {
             "conversionType": "freetrial",
             "amount": {
                 "value": "10"
+            },
+            "customParams": {
+                advS1: "Account created"
             }
         });
     }
