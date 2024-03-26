@@ -15,11 +15,11 @@ const Success = () => {
         console.log(window.trackdesk)
         alert('Conversion btn Triggered')
         window.trackdesk("lennyai", "conversion", {
-            "conversionType": "freetrial",
-            "amount": {
+            conversionType: "lead",
+            amount: {
                 "value": "10"
             },
-            "customParams": {
+            customParams: {
                 advS1: "Account created"
             }
         });
